@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: url(../img/bg-intro-mobile.png) #ff7a7a;
+  color: #fff;
+  padding: 3.2rem 1.5rem;
+}
+
+@media screen and (min-width: 700px) {
+  main {
+    height: 900px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+}
+
+.section__text {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .section__text {
+    text-align: left;
+    padding: 0 1rem 0 5rem;
+  }
+}
+
+.section__text h1 {
+  padding: 2rem 2rem 1.5rem 2rem;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 700px) {
+  .section__text h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section__text h1 {
+    padding: 0;
+    font-size: 3rem;
+  }
+}
+
+.section__text p {
+  padding: 0 .5rem 4rem .5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .section__text p {
+    padding: 0;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+.section__form {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section__form-banner {
+  margin-bottom: 1rem;
+  padding: 1rem 4rem;
+  text-align: center;
+  background: #6055a5;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 6px 2px rgba(102, 102, 102, 0.3);
+          box-shadow: 0 6px 2px rgba(102, 102, 102, 0.3);
+  font-size: .9rem;
+  line-height: 1.8;
+}
+
+.section__form-banner span {
+  font-weight: 700;
+}
+
+.section__form form {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.3rem 1.5rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 7px 1px rgba(102, 102, 102, 0.3);
+          box-shadow: 0 7px 1px rgba(102, 102, 102, 0.3);
+}
+
+.section__form form .form__input {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.section__form form .form__input input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-weight: 600;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #b9b6d3;
+}
+
+.section__form form .form__input .icon-error {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.section__form form .form__input .msg-error {
+  position: absolute;
+  font-size: 11px;
+  color: #ff7a7a;
+  font-style: italic;
+  bottom: 0;
+  right: 10px;
+  visibility: hidden;
+}
+
+.section__form form button {
+  padding: 1rem 2rem;
+  margin: .3rem;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  background: #38cc8c;
+  border: 1px solid #38cc8c;
+  -webkit-box-shadow: 1px 1px 2px #3e3c49;
+          box-shadow: 1px 1px 2px #3e3c49;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .05rem;
+  -webkit-transition: all .7s ease-in;
+  transition: all .7s ease-in;
+}
+
+.section__form form button:hover {
+  background: #2ba671;
+  cursor: pointer;
+}
+
+.section__form form button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.section__form form p {
+  color: #b9b6d3;
+  font-size: 11px;
+  line-height: 1.6;
+  text-align: center;
+  padding: .5rem 1rem;
+}
+
+.section__form form p a {
+  color: #ff1414;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
