@@ -15,7 +15,7 @@ function checkInputs() {
   let lastNameValue = lastName.value.trim();
   let emailValue = email.value.trim();
   let passwordValue = password.value.trim();
-  let regEx = /\S+@\S+\.\S+/;
+  let regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
   if (firstNameValue === "") {
     showError(firstName, "First name cannot be empty");
@@ -46,7 +46,7 @@ function showError(input, message) {
   let formInput = input.parentElement;
   let msgError = formInput.querySelector(".msg-error");
   let iconError = formInput.querySelector(".icon-error");
-  formInput.style.borderColor = "hsl(0, 100%, 74%)"; 
+  input.style.borderColor = "hsl(0, 100%, 74%)"; 
   msgError.style.visibility = "visible";
   msgError.innerText = message;
   iconError.style.visibility = "visible";
@@ -56,7 +56,7 @@ function removeError(input) {
   let formInput = input.parentElement;
   let msgError = formInput.querySelector(".msg-error");
   let iconError = formInput.querySelector(".icon-error");
-  formInput.style.borderColor = "hsl(246, 25%, 77%)";
+  input.style.borderColor = "hsl(246, 25%, 77%)";
   msgError.style.visibility = "hidden";
   iconError.style.visibility = "hidden";
 }
