@@ -18,16 +18,17 @@ main {
   background: url(../img/bg-intro-mobile.png) #ff7a7a;
   color: #fff;
   padding: 3.2rem 1.5rem;
+  overflow: auto;
 }
 
 @media screen and (min-width: 700px) {
   main {
-    height: 900px;
+    background: url(../img/bg-intro-desktop.png) #ff7a7a;
     padding: 0;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   main {
     display: -ms-grid;
     display: grid;
@@ -43,7 +44,7 @@ main {
   text-align: center;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .section__text {
     text-align: left;
     padding: 0 1rem 0 5rem;
@@ -61,7 +62,7 @@ main {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .section__text h1 {
     padding: 0;
     font-size: 3rem;
@@ -72,7 +73,7 @@ main {
   padding: 0 .5rem 4rem .5rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .section__text p {
     padding: 0;
     margin-top: 2rem;
@@ -81,8 +82,7 @@ main {
 }
 
 .section__form {
-  width: 500px;
-  max-width: 100%;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -104,6 +104,7 @@ main {
 
 .section__form form {
   background: #fff;
+  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,6 +135,10 @@ main {
   outline: none;
   border-radius: 5px;
   border: 1px solid #b9b6d3;
+}
+
+.section__form form .form__input input:focus {
+  border: 2px solid #b9b6d3;
 }
 
 .section__form form .form__input .icon-error {
@@ -167,12 +172,12 @@ main {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .05rem;
-  -webkit-transition: all .7s ease-in;
-  transition: all .7s ease-in;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
 }
 
 .section__form form button:hover {
-  background: #2ba671;
+  background: #61d6a3;
   cursor: pointer;
 }
 

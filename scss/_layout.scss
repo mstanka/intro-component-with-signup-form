@@ -4,10 +4,11 @@ main {
   margin: 0 auto;
   background: url(../img/bg-intro-mobile.png) $primary-red;
   color: #fff;
-  padding: 3.2rem 1.5rem;
+  padding: 3.2rem 1.5rem; 
+  overflow: auto; 
 
   @include media-md {
-    height: 900px;
+    background: url(../img/bg-intro-desktop.png) $primary-red;
     padding: 0;
   }
 
@@ -37,7 +38,7 @@ main {
     }
 
     @include media-lg {
-      padding: 0;
+      padding: 0; 
       font-size: 3rem;      
     }
   }
@@ -54,8 +55,7 @@ main {
 }
 
 .section__form {
-  width: 500px;
-  max-width: 100%;
+  max-width: 600px;
   margin: 0 auto;
   
   &-banner {
@@ -75,6 +75,7 @@ main {
 
   form {   
     background: #fff; 
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,6 +96,10 @@ main {
         outline: none;
         border-radius: 5px;
         border: 1px solid $grayish-blue;
+
+        &:focus {
+          border: 2px solid $grayish-blue
+        }
       }  
 
       .icon-error {     
@@ -128,10 +133,10 @@ main {
       text-transform: uppercase;
       font-weight: 600;
       letter-spacing: .05rem;  
-      transition: all .7s ease-in;  
+      transition: all .5s ease-in;  
       
       &:hover {        
-        background: darken($primary-green, 10%);
+        background: lighten($primary-green, 10%);
         cursor: pointer;
       }
 
